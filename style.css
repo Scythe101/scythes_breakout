@@ -1,43 +1,104 @@
+body{
+  width: 100%;
+  height: 100%;
+}
+
+
+
+html{
+  min-height: 100%;
+  min-width: 100%;
+}
+
 .sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-  }
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
   
-  .sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #d2d1d1;
-    display: block;
-    transition: 0.3s;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  }
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
   
-  .sidenav a:hover {
-    color: #ffffff;
-  }
+  font-size: 25px;
   
-  .sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
+  display: block;
+  transition: 0.3s;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+span{
+  padding-left: 12px;
+}
+
+@media screen and (max-width:680px){
+  .projects{
+    width: 100%;
   }
+  #space{
+    width: 0%;
+    height:4px;
+  }
+}
+
+
+body{
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right bottom,#ECEFF4,rgb(161, 176, 199));
+}
+
+.sidenav{
+  background-color: #3B4252;
+  color: #ced4de;
+}
+.sidenav a{
+  color: #ced4de;
+}
+.sidenav a:hover{
+  color: white;
+}
+
+#blacklink:visited{
+  color: rgb(75 85 105);
   
-  @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-  }
+}
+
+#blacklink:link{
+  color: rgb(75 85 105);
   
-  span{
-    padding-left: 12px;
-  }
+}
+
+.projects{
+  background: rgb(229, 234, 245);
+  border: 2px solid #4C566A;
+}
+#menuButton{
+  font-size:30px;
+  cursor:pointer;
+  position: fixed;
+}
+
+a{
+  text-decoration: none;
+}

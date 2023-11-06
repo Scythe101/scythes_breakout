@@ -1013,7 +1013,7 @@ canvas{
 
 
 <!-- Add any content above the cart here -->
-<div id="mySidenav" class="sidenav">
+<div id="mySidenav" class="sidenav" onmouseleave="closeNav()">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
       <a href="https://scythe101.github.io">Home</a>
       <a href="https://scythe101.github.io/htmlclickergame">HTML Clicker Game</a>
@@ -1026,7 +1026,7 @@ canvas{
     </div>
   
   
-<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    <span onmouseover="teaseNav()" onmouseleave="closeTeasedNav()" id="menuButton" onclick="openNav()">&#9776;</span>
 
 <div id="p8_frame_0" style="max-width:800px; max-height:800px; margin:auto;"> <!-- double function: limit size, and display only this div for touch devices -->
 <div id="p8_frame" style="display:flex; width:100%; max-width:95vw; height:100vw; max-height:95vh; margin:auto;">
